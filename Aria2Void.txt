@@ -1,0 +1,30 @@
+# ==========================================
+# CONFIGURACIÓN DE ARIA2
+# ==========================================
+
+# --- Optimización de Velocidad de Descarga ---
+# Valores máximos para saturar el ancho de banda. 
+# Te sugiero probar bajando el 16 a 8 o 4 si notas que tu red se vuelve inestable.
+max-connection-per-server=16
+split=16
+min-split-size=10M
+max-concurrent-downloads=3
+
+# --- Optimización de Recursos y Disco ---
+# 'falloc' reserva espacio instantáneamente en sistemas de archivos modernos (ext4, btrfs, f2fs)
+file-allocation=falloc
+# Evita reservar espacio para archivos muy pequeños
+no-file-allocation-limit=5M
+# Limita la caché en RAM para que el demonio se mantenga ultraligero
+disk-cache=16M
+# Reduce el tiempo de espera si un servidor no responde rápido
+timeout=30
+max-tries=5
+
+# --- Comportamiento General ---
+# Continúa automáticamente las descargas pausadas o interrumpidas
+continue=true
+# Deshabilita IPv6 si no lo usas, ahorra búsquedas DNS innecesarias
+disable-ipv6=true
+# Muestra un resumen en la consola cada 60 segundos
+summary-interval=60
