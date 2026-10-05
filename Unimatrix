@@ -1,0 +1,2 @@
+echo 'export PATH="$PATH:/usr/local/bin"' >> ~/.bashrc
+source ~/.bashrc
