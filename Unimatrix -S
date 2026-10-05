@@ -1,0 +1,1 @@
+echo "alias unimatrix='unimatrix -s 90'" >> ~/.bashrc
