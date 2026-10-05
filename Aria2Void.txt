@@ -9,6 +9,13 @@ max-connection-per-server=16
 split=16
 min-split-size=10M
 max-concurrent-downloads=3
+dir=/home/mitski/zero
+
+# --- Control Remoto (RPC) ---
+# Habilita el servidor RPC para conectar extensiones como Aria2 Explorer en Brave
+enable-rpc=true
+rpc-allow-origin-all=true
+rpc-listen-all=true
 
 # --- Optimización de Recursos y Disco ---
 # 'falloc' reserva espacio instantáneamente en sistemas de archivos modernos (ext4, btrfs, f2fs)
