@@ -1,1 +1,5 @@
-flatpak run io.github.hmlendea.geforcenow-electron --ignore-gpu-blocklist --disable-features=VaapiVideoEncoder,PlatformHEVCDecoderSupport --enable-features=VaapiVideoDecoder --disable-gpu-driver-bug-workarounds
+flatpak override --user \
+  --env=GFN_DISABLE_RPC=1 \
+  --env=GFN_ENABLE_EXPERIMENTAL_GPU_FLAGS=1 \
+  --append-args="--disable-features=PlatformHEVCDecoderSupport,PlatformAV1DecoderSupport --enable-gpu-rasterization --enable-zero-copy --ignore-gpu-blocklist --num-raster-threads=4" \
+  io.github.hmlendea.geforcenow-electron
