@@ -1,0 +1,1 @@
+flatpak run io.github.hmlendea.geforcenow-electron --ignore-gpu-blocklist --disable-features=VaapiVideoEncoder,PlatformHEVCDecoderSupport --enable-features=VaapiVideoDecoder --disable-gpu-driver-bug-workarounds
