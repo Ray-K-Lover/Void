@@ -1,0 +1,6 @@
+[shell]
+polkit_agent = true
+
+[hooks]
+theme_mode_changed = "systemctl --user restart xdg-desktop-portal-gtk.service"
+colors_changed = "systemctl --user restart xdg-desktop-portal-gtk.service"
