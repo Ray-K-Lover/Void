@@ -1,0 +1,66 @@
+! ==========================================
+! 1. TEMA AMOLED PURO Y TIPOGRAFÍA (YouTube)
+! ==========================================
+! Tipografía global estilo Terminal (Monospace)
+www.youtube.com##*:style(font-family: "Noto Sans Mono", monospace !important; --yt-spec-font-family: "Noto Sans Mono", monospace !important;)
+
+! Fondo base global, resplandor del reproductor (Frosted Glass) y cabecera de página
+www.youtube.com##html, ytd-app, #frosted-glass, #page-header:style(background-color: #000000 !important; --yt-spec-base-background: #000000 !important; --yt-spec-general-background-a: #000000 !important;)
+
+! Cabecera y buscador
+www.youtube.com##ytd-masthead, #background.ytd-masthead:style(background: #000000 !important; background-color: #000000 !important;)
+www.youtube.com##ytd-searchbox, #container.ytd-searchbox:style(background: #000000 !important; background-color: #000000 !important; border-color: #222222 !important;)
+
+! Categorías y menú lateral principal
+www.youtube.com##ytd-feed-filter-chip-bar-renderer, #chips-wrapper:style(background-color: #000000 !important;)
+www.youtube.com###contentContainer, #guide-content:style(background: #000000 !important; background-color: #000000 !important; --yt-spec-menu-background: #000000 !important;)
+
+! Panel de Listas de Reproducción (AMOLED con esquinas redondeadas limpias)
+www.youtube.com##ytd-playlist-panel-renderer:style(background: #000000 !important; background-color: #000000 !important; border: 1px solid #222222 !important; border-radius: 12px !important; overflow: hidden !important;)
+www.youtube.com##ytd-playlist-panel-renderer .header:style(background: #000000 !important; background-color: #000000 !important;)
+
+
+! ==========================================
+! 2. LIMPIEZA DE INTERFAZ MINIMALISTA (YouTube)
+! ==========================================
+! Cabecera: Logo, dictado, avatares, notificaciones generales y botones extra
+www.youtube.com##ytd-topbar-logo-renderer
+www.youtube.com###voice-search-button
+www.youtube.com##ytd-masthead #end ytd-button-renderer
+www.youtube.com##ytd-notification-topbar-button-renderer
+www.youtube.com##ytd-topbar-menu-button-renderer
+
+! Ocultar campanas de notificación en botones de suscripción (Clásico y Moderno)
+www.youtube.com##ytd-subscription-notification-toggle-button-renderer
+www.youtube.com##.ytSpecButtonShapeNextHost.ytSpecButtonShapeNextTonal.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextSizeM.ytSpecButtonShapeNextIconLeadingTrailing.ytSpecButtonShapeNextIconLeadingTrailingNoText.ytSpecButtonShapeNextEnableBackdropFilterExperiment.ytSpecButtonShapeNextMainstageIconSize.ytSpecButtonShapeNextMainstagePadding
+
+! Ocultar flechas grises de las categorías
+www.youtube.com###right-arrow, #left-arrow
+
+! Barra de acciones inferior (Like, Dislike, Compartir, etc.)
+www.youtube.com###actions, #actions-inner
+
+! Reproductor: Controles, superposiciones y menú contextual (clic derecho)
+www.youtube.com##.ytp-progress-bar-container, .ytp-left-controls, .ytp-remote-button, .ytp-size-button, .ytp-fullscreen-grid-expand-button, .ytp-fullscreen-metadata
+www.youtube.com##.branding-img, .ytp-chrome-top-buttons, .ytPlayerQuickActionButtonsHost
+www.youtube.com##.ytp-contextmenu
+
+! Feed, Shorts y Secciones de la Descripción
+www.youtube.com##.ytVideoDescriptionYouchatSectionViewModelHost, ytd-horizontal-card-list-renderer, ytd-video-description-transcript-section-renderer, ytd-video-description-infocards-section-renderer
+www.youtube.com##ytd-rich-section-renderer
+
+! Menú lateral: Ocultar Shorts, Descargas, Explorar y Pie de página (Historial VISIBLE)
+www.youtube.com##ytd-guide-section-renderer:nth-of-type(1) > div > ytd-guide-entry-renderer:nth-of-type(2)
+www.youtube.com##ytd-guide-section-renderer:nth-of-type(n+4)
+www.youtube.com##ytd-guide-downloads-entry-renderer
+www.youtube.com###guide-links-primary, #guide-links-secondary, ytd-guide-renderer #footer
+
+
+! ==========================================
+! 3. TEMA Y LIMPIEZA DE INTERFAZ (Gemini)
+! ==========================================
+! Tipografía estilo Terminal en todo Gemini (excluyendo íconos para evitar que se rompan)
+gemini.google.com##*:not(md-icon):not(.google-symbols):not(.material-symbols-outlined):not(mat-icon):style(font-family: "Noto Sans Mono", monospace !important;)
+
+! Aplicar la fuente al texto fantasma de "Ask Gemini" y otras cajas de entrada
+gemini.google.com##*::placeholder, [data-placeholder]::before:style(font-family: "Noto Sans Mono", monospace !important;)
