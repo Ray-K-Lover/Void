@@ -1,0 +1,19 @@
+#!/bin/bash
+# Carpeta donde swww reporta sus cambios
+CACHE_DIR="$HOME/.cache/swww"
+mkdir -p "$CACHE_DIR"
+
+# Bucle infinito súper ligero
+while inotifywait -e modify,create "$CACHE_DIR"; do
+    # Extrae la ruta de la imagen actual desde swww
+    WALLPAPER=$(swww query | grep -oP 'image: \K.*' | head -n 1)
+    
+    if [ -n "$WALLPAPER" ]; then
+        # 1. Inyectar nuevos colores
+        wallust run "$WALLPAPER"
+        
+        # 2. Recargar las aplicaciones al vuelo
+        makoctl reload 2>/dev/null
+        if pidof kitty >/dev/null; then kill -SIGUSR1 $(pidof kitty); fi
+    fi
+done
