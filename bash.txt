@@ -1,13 +1,1 @@
-{
-echo "== 1. KERNEL / ARRANQUE"; uname -r; cat /proc/cmdline
-ls -1 /boot
-echo; echo "== 2. LIMINE"; cat /boot/EFI/BOOT/limine.conf; efibootmgr
-echo; echo "== 3. SYSCTL"; ls -l /etc/sysctl.d/; sysctl vm.swappiness vm.vfs_cache_pressure vm.page-cluster vm.max_map_count
-echo; echo "== 4. SERVICIOS DINIT"; dinitctl list; ls -l /etc/dinit.d/boot.d/
-echo; echo "== 5. RED / HORA"; ip -br a; ping -c1 -W3 artixlinux.org >/dev/null && echo ping_ok; date; timedatectl 2>/dev/null; ls -l /etc/localtime
-echo; echo "== 6. ZRAM / FSTAB"; zramctl; swapon --show; cat /etc/fstab; findmnt /boot /
-echo; echo "== 7. PACMAN"; grep -vE '^\s*(#|$)' /etc/pacman.conf; pacman -Qm; pacman -Qq linux linux-cachyos-bore
-echo; echo "== 8. USUARIO / LOCALE / TECLADO"; id mitski; locale; cat /etc/vconsole.conf /etc/conf.d/keymaps /etc/hostname
-echo; echo "== 9. EXTRAS"; cat /etc/cron.d/fstrim; ls -l /usr/local/bin/start-audio /etc/udev/rules.d/60-ioschedulers.rules /etc/pacman.d/hooks/; ls /etc/security/limits.d/
-echo; echo "== 10. ERRORES"; dmesg --level=err,warn | tail -30
-} 2>&1 | tee /tmp/check.txt
+grep -aE '\[(AVISO|ERROR|FALTA)\]|^error:|^warning:' /var/log/artix-install.log
