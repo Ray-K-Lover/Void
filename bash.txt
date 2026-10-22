@@ -1,0 +1,2 @@
+sed -i 's|^  cat > /etc/sysctl.d/99-cachyos-like.conf <<|  mkdir -p /etc/sysctl.d\n&|' artix-install.sh
+sed -i "s|^echo '0 4 \* \* 0 root /usr/bin/fstrim -av' > /etc/cron.d/fstrim|mkdir -p /etc/cron.d\n&|" artix-install.sh
