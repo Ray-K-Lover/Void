@@ -1,0 +1,1 @@
+curl -F'file=@/tmp/check.txt' https://0x0.st
