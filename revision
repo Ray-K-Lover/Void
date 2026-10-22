@@ -1,0 +1,4 @@
+cd /home/artix/Void
+sed -E 's/\x1b\[[0-9;?]*[a-zA-Z]//g' install-v6.log | tr -d '\r' > install-v6.txt
+grep -n 'AVISO\|ERROR' install-v6.txt
+python3 -m http.server 8000
