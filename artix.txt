@@ -1,4 +1,7 @@
+{
 sudo dinitctl list
-sudo dmesg --level=err,warn | tail -15
-grep -v '^#' /etc/mkinitcpio.d/linux.preset
-pacman -Q steam mangohud gamemode pipewire wireplumber
+echo ----; sudo dmesg --level=err,warn | tail -15
+echo ----; grep -v '^#' /etc/mkinitcpio.d/linux.preset
+echo ----; pacman -Q steam mangohud gamemode pipewire wireplumber
+} > /tmp/check2.txt 2>&1
+cd /tmp && python3 -m http.server 8000
