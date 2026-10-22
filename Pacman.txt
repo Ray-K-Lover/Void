@@ -1,2 +1,4 @@
-[chaotic-aur]
-Include = /etc/pacman.d/chaotic-mirrorlist
+cd /home/artix/Void
+grep -n 'versión' artix-install.sh | head -1
+rm -f install-v6.log artix-install-log
+script -q -f install-v6.log -c "bash artix-install.sh"
