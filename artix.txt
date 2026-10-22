@@ -1,2 +1,4 @@
-ip -br a
-cd /tmp && python3 -m http.server 8000
+sudo dinitctl list
+sudo dmesg --level=err,warn | tail -15
+grep -v '^#' /etc/mkinitcpio.d/linux.preset
+pacman -Q steam mangohud gamemode pipewire wireplumber
