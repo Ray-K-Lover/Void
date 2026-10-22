@@ -1,1 +1,4 @@
-grep -aE '\[(AVISO|ERROR|FALTA)\]|^error:|^warning:' /var/log/artix-install.log
+uname -r; pacman -Q linux linux-cachyos-bore
+cat /boot/EFI/BOOT/limine.conf
+grep -a -iE 'v3|cachy' /var/log/artix-install.log | head -30
+/lib/ld-linux-x86-64.so.2 --help | grep 'x86-64-v'
