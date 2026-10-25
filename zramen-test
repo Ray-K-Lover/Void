@@ -1,5 +1,0 @@
-zramctl
-swapon --show
-cat /etc/dinit.d/config/zramen.conf
-dinitctl list | grep zramen
-sysctl vm.swappiness vm.page-cluster
