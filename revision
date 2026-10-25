@@ -1,2 +1,0 @@
-cd /home/artix/Void
-sed -n '1400,1414p' install-v6.txt
