@@ -1,1 +1,0 @@
-script -q -f "$PWD/install-v6.log" -c "sudo bash artix-install.sh"
