@@ -1,0 +1,23 @@
+UNIT FILE                          STATE   PRESET
+cachyos-iw-set-regdomain.path      enabled disabled
+ananicy-cpp.service                enabled disabled
+avahi-daemon.service               enabled disabled
+getty@.service                     enabled enabled
+NetworkManager-dispatcher.service  enabled disabled
+NetworkManager-wait-online.service enabled disabled
+NetworkManager.service             enabled disabled
+sddm.service                       enabled disabled
+systemd-oomd.service               enabled disabled
+systemd-resolved.service           enabled enabled
+systemd-timesyncd.service          enabled enabled
+ufw.service                        enabled disabled
+avahi-daemon.socket                enabled disabled
+systemd-oomd.socket                enabled disabled
+systemd-resolved-monitor.socket    enabled disabled
+systemd-resolved-varlink.socket    enabled disabled
+systemd-userdbd.socket             enabled enabled
+remote-fs.target                   enabled enabled
+cachyos-rate-mirrors.timer         enabled disabled
+fstrim.timer                       enabled disabled
+
+20 unit files listed.
