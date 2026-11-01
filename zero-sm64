@@ -1,0 +1,1 @@
+printf '[Desktop Entry]\nName=SM64 Coop DX\nExec=/home/mitskimyheart/zero/sm64coopdx\nPath=/home/mitskimyheart/zero\nType=Application\nTerminal=false\nCategories=Game;\n' > ~/.local/share/applications/sm64coopdx.desktop
