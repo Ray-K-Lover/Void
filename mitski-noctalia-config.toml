@@ -382,7 +382,7 @@ source = "wallpaper"
 wallpaper_scheme = "m3-monochrome"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "mango", "qt" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "mango", "qt" ]
     community_ids = [ "ytm-player", "heroiclauncher", "yazi" ]
 
 [wallpaper]
