@@ -37,18 +37,6 @@ settings_window_translucent = true
 [theme]
 wallpaper_scheme = "m3-content"
 
-[wallpaper]
-transition = [ "fade" ]
-
-    [wallpaper.default]
-    path = "/home/mitski/Wallpapers/wallhaven-6dx3mw.jpg"
-
-    [wallpaper.last]
-    path = "/home/mitski/Wallpapers/wallhaven-6dx3mw.jpg"
-
-    [wallpaper.monitors.VGA-1]
-    path = "/home/mitski/Wallpapers/wallhaven-6dx3mw.jpg"
-
 [widget.spacer_3]
 length = 11
 
