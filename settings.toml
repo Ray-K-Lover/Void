@@ -31,8 +31,8 @@ transition = [ "fade" ]
 [shell]
 settings_window_translucent = true
 
-    [shell.panel]
-    transparency_mode = "glass"
+[shell.panel]
+transparency_mode = "glass"
 
 [theme]
 wallpaper_scheme = "m3-content"
