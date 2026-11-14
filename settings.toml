@@ -1,0 +1,58 @@
+config_version = 20
+
+[bar.default]
+background_opacity = 0.4999999888241291
+margin_ends = 7
+radius = 11
+thickness = 25
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "nightlight"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "clipboard"
+
+[[control_center.shortcuts]]
+type = "keyboard_layout"
+
+[lockscreen]
+blur_intensity = 0.0
+transition = [ "fade" ]
+
+[shell]
+settings_window_translucent = true
+
+    [shell.panel]
+    transparency_mode = "glass"
+
+[theme]
+wallpaper_scheme = "m3-content"
+
+[wallpaper]
+transition = [ "fade" ]
+
+    [wallpaper.default]
+    path = "/home/mitski/Wallpapers/wallhaven-6dx3mw.jpg"
+
+    [wallpaper.last]
+    path = "/home/mitski/Wallpapers/wallhaven-6dx3mw.jpg"
+
+    [wallpaper.monitors.VGA-1]
+    path = "/home/mitski/Wallpapers/wallhaven-6dx3mw.jpg"
+
+[widget.spacer_3]
+length = 11
+
+[widget.workspaces]
+capsule = false
+capsule_opacity = 0.80000000000000004
+show_tooltip = false
