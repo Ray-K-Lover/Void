@@ -1,0 +1,1 @@
+sudo pkill NetworkManager; sleep 3; sudo sed -i 's|>/dev/null 2>&1|>/tmp/nm.log 2>\&1|' /etc/sv/NetworkManager/run; sudo sv restart NetworkManager; sleep 3; cat /tmp/nm.log
