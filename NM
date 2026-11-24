@@ -1,1 +1,1 @@
-sudo pkill NetworkManager; ls -l /etc/sv/NetworkManager/run; sudo chmod +x /etc/sv/NetworkManager/run; sudo sv restart NetworkManager; sleep 5; sudo sv status NetworkManager
+sudo pkill NetworkManager; sudo rm /var/service/NetworkManager; sudo ln -s /etc/sv/NetworkManager /var/service/; sleep 6; sudo sv status NetworkManager
