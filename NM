@@ -1,1 +1,0 @@
-sudo pkill NetworkManager; sudo rm /var/service/NetworkManager; sudo ln -s /etc/sv/NetworkManager /var/service/; sleep 6; sudo sv status NetworkManager
