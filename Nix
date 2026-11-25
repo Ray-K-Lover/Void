@@ -1,1 +1,3 @@
-export XDG_DATA_DIRS="$HOME/.nix-profile/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+rm -f ~/.local/share/applications/helium.desktop
+rmdir ~/.local/share/applications
+ln -s ~/.nix-profile/share/applications ~/.local/share/applications
