@@ -1,3 +1,4 @@
 rm -f ~/.local/share/applications/helium.desktop
-rmdir ~/.local/share/applications
-ln -s ~/.nix-profile/share/applications ~/.local/share/applications
+cp ~/.nix-profile/share/applications/helium.desktop ~/.local/share/applications/
+sed -i "s|^Exec=[^ ]*helium|Exec=$HOME/.nix-profile/bin/helium|" ~/.local/share/applications/helium.desktop
+grep Exec ~/.local/share/applications/helium.desktop
