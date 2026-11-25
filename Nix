@@ -1,5 +1,2 @@
-rm ~/.local/share/applications
-mkdir -p ~/.local/share/applications
-cp --no-preserve=mode ~/.nix-profile/share/applications/helium.desktop ~/.local/share/applications/
-sed -i "s|^Exec=[^ ]*helium|Exec=$HOME/.nix-profile/bin/helium|" ~/.local/share/applications/helium.desktop
-grep Exec ~/.local/share/applications/helium.desktop
+echo 'export PATH="$HOME/.nix-profile/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
